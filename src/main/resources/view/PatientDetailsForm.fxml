@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane5" prefHeight="577.0" prefWidth="601.0" style="-fx-background-color: #74b9ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PatientDetailsFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="208.0" prefHeight="34.0" prefWidth="70.0" text="Name">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="447.0" prefHeight="34.0" prefWidth="70.0" text="Address">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="322.0" prefHeight="34.0" prefWidth="134.0" text="Contact Number">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="157.0" prefHeight="34.0" prefWidth="87.0" text="ID Number">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="378.0" prefHeight="34.0" prefWidth="70.0" text="Gender">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="6.0" prefHeight="90.0" prefWidth="576.0" style="-fx-background-color: #1B9CFC;" text="                                              New Pation Registration&#10;" textAlignment="CENTER">
+         <font>
+            <Font name="Candara Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtID" layoutX="153.0" layoutY="160.0" prefHeight="29.0" prefWidth="170.0" />
+      <Label layoutX="14.0" layoutY="267.0" prefHeight="34.0" prefWidth="70.0" text="DOB">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="153.0" layoutY="211.0" prefHeight="29.0" prefWidth="257.0" promptText="Name" />
+      <Label layoutX="14.0" layoutY="116.0" prefHeight="34.0" prefWidth="99.0" text="Today Date">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtgender" layoutX="153.0" layoutY="381.0" prefHeight="25.0" prefWidth="99.0" promptText="Male / Female" />
+      <TextArea fx:id="txtaddress" layoutX="153.0" layoutY="438.0" prefHeight="68.0" prefWidth="194.0" promptText="Address" />
+      <TextField fx:id="txtcontact" layoutX="153.0" layoutY="325.0" prefHeight="29.0" prefWidth="170.0" promptText="071-" />
+      <Button fx:id="PRegisterbtn" layoutX="489.0" layoutY="503.0" mnemonicParsing="false" onAction="#PRegisterbuttonOnAction" prefHeight="43.0" prefWidth="87.0" style="-fx-background-color: #05c46b;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txttoday" layoutX="153.0" layoutY="119.0" prefHeight="29.0" prefWidth="170.0" />
+      <TextField fx:id="txtdob" layoutX="153.0" layoutY="267.0" prefHeight="29.0" prefWidth="170.0" />
+      <ImageView fitHeight="210.0" fitWidth="204.0" layoutX="376.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/pngtree-data-analysis-illustration-concept-png-image_2339504-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Backbtn" layoutX="23.0" layoutY="32.0" mnemonicParsing="false" onAction="#BackbuttonOnAction" prefHeight="34.0" prefWidth="52.0" style="-fx-background-color: #1B9CFC;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8-back-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
