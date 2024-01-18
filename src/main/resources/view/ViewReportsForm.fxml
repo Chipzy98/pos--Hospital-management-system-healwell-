@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane7" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #74b9ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewReportsFormController">
+   <children>
+      <ImageView fitHeight="336.0" fitWidth="432.0" layoutX="163.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/19839-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="21.0" prefHeight="72.0" prefWidth="573.0" style="-fx-background-color: #1B9CFC;" text="                   View Reports">
+         <font>
+            <Font name="Bookman Old Style Bold" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="mreportbtn" layoutX="14.0" layoutY="155.0" mnemonicParsing="false" onAction="#MReportOnActionButton" prefHeight="53.0" prefWidth="133.0" style="-fx-background-color: #05c46b;" text="Medical Reports" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="lreportbtn" layoutX="14.0" layoutY="250.0" mnemonicParsing="false" onAction="#LReportOnActionButton" prefHeight="53.0" prefWidth="133.0" style="-fx-background-color: #05c46b;" text="Lab Reports" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="backbtn" layoutX="26.0" layoutY="34.0" mnemonicParsing="false" onAction="#BackOnActionButton" style="-fx-background-color: #1B9CFC;">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8-back-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
